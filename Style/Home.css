@@ -52,7 +52,7 @@
     width: 40%;
     height: max-content;
     margin: 3% 0 0 6.6%;
-    border-image-source: url("Imgs/Home/Content-Border.png");
+    border-image-source: url("../Imgs/Home/Content-Border.png");
     border-image-slice: 55 140 fill;
     border-image-width: 30px 45px;
     opacity: 90%;
