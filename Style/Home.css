@@ -1,0 +1,144 @@
+/* Head Of Home */
+#home-head{
+    width: 100%;
+    height: max-content;
+    filter: drop-shadow(0 0 5px rgb(114, 241, 255));
+}
+#home-head h1{
+    position: absolute;
+    font-size: 50px;
+    margin: 90px 1%;
+    color: rgb(255, 255, 125);
+    text-shadow: 0 0 5px rgb(150, 255, 241);
+    opacity: 75%;
+    z-index: 1;
+}
+#home-head img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    filter: brightness(75%);
+}
+
+/* Overview Part */
+#home-overview{
+    width: 85%;
+    height: max-content;
+    margin: 3% 7.5% 0 7.5%;
+    border-image-source: url("/Imgs/Home/Overview-Border.png");
+    border-image-slice: 40 30 fill;
+    border-image-width: 50px 30px;
+    opacity: 90%;
+    filter: drop-shadow(0 0 2px rgb(0, 189, 246));
+}
+#home-overview h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    color: rgb(255, 200, 160);
+    text-shadow: 0 0 5px rgb(174, 255, 244);
+}
+#home-overview p{
+    width: 90%;
+    font-size: 20px;
+    margin: 1.75% auto;
+    color: white;
+    text-shadow: 0 0 5px rgb(191, 255, 246);
+}
+#home-overview p:last-child{padding-bottom: 50px;}
+
+/* Content Part */
+#content{
+    width: 40%;
+    height: max-content;
+    margin: 3% 0 0 6.6%;
+    border-image-source: url("/Imgs/Home/Content-Border.png");
+    border-image-slice: 55 140 fill;
+    border-image-width: 30px 45px;
+    opacity: 90%;
+    filter: drop-shadow(0 0 3px rgb(0, 131, 246));
+    display: inline-block;
+}
+#content h1{
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0 15px 0;
+    color: rgb(255, 216, 205);
+    text-shadow: 0 0 5px rgb(174, 255, 244);
+}
+#content ul li{
+    font-size: 18px;
+    color: white;
+    text-shadow: 0 0 4px white;
+    margin: 5px 0 10px 0;
+}
+#content ul li:last-child{padding-bottom: 30px;}
+
+/* Final Content */
+.system-components {
+  width: 85%;
+  height: max-content;
+  margin: 3% 7.5% 0 7.5%;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.system-components h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: rgb(255, 216, 205);
+    text-shadow: 0 0 5px rgb(174, 255, 244);
+}
+
+.components-container {
+    width: 100%;
+    display: flex;
+    gap: 75px;
+    text-align: left;
+    flex-wrap: wrap; /* responsive */
+}
+
+.component {
+    width: max-content;
+    padding-right: 7.5%;
+    position: relative;
+}
+
+ /* vertical lines between columns */
+.component:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    border-radius: 25px;
+    height: 100%;
+    background-image: url("../Imgs/About-Infos/Infos-Bar.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 3px 5px rgb(202, 190, 132);
+}
+
+.component h3 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgb(255, 202, 169);
+    text-shadow: 0 0 3px rgb(170, 255, 228);
+}
+
+.component ul {
+    list-style: disc inside;
+    padding: 0;
+    margin: 10px;
+}
+
+ .component li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+    text-shadow: 0 0 2px white;
+}

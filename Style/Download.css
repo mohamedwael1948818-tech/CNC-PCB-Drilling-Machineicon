@@ -1,0 +1,63 @@
+.Edge{
+    width: 70%;
+    height: max-content;
+    margin: 3% 15% 0 15%;
+    background-color: rgba(0, 3, 14, 0.926);
+    clip-path: polygon(
+    13px 0,
+    calc(100% - 13px) 0,
+    100% 15px,
+    100% calc(100% - 15px),
+    calc(100% - 13px) 100%,
+    13px 100%,
+    0 calc(100% - 15px),
+    0 15px
+    );
+}
+#Down-Part{
+    width: 100%;
+    height: max-content;
+    border-image-source: url("../Imgs/Download/Down-Border.png");
+    border-image-width: 30px 35px;
+    border-image-slice: 35 70 fill;
+    filter: drop-shadow(0 0 3px rgba(35, 167, 255, 0.8));
+}
+#Down-Part #main-img{
+    width: 80%;
+    height: 350px;
+    margin: 30px 10%;
+    object-fit: cover;
+}
+#discription-board{
+    width: 80%;
+    margin: 0 0 30px 10%;
+    font-size: 16px;
+    color: white;
+}
+button {
+    font-size: 18px;
+    color: white;
+    background-color: transparent;
+    margin: 0 0 10px 10%;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+}
+.down-info{
+    width: 80%;
+    height: 0;
+    border-image-source: url("../Imgs/Download/Down-Infos.png");
+    border-image-width: 25px 30px;
+    border-image-slice: 45 50 fill;
+    margin: 0 0 0 10%;
+    padding-top: 0px;
+    overflow: hidden;
+    transition: height 1s ease, margin 1s ease, padding 1s ease;
+}
+.down-data{transition: opacity 0.5s ease; opacity: 0; }
+.down-info p{
+    color:white;
+    font-size: 18px;
+    padding: 10px 25px;
+}
+.down-info a{color:rgb(249, 255, 159);}

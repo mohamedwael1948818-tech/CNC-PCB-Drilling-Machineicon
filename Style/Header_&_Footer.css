@@ -1,0 +1,150 @@
+        body{
+            background-image: url("/Imgs/Back-Ground/BG.png");
+        }
+        *{
+            margin: 0%;
+            border: 0%;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        /* Header */
+        #head-bar{
+            width: 100%;
+            height: 75px;
+            background-color: rgba(17, 60, 108, 0.959);
+            border-image-source: url("../Imgs/Header_&_Footer/Border-Head.png");
+            border-image-width: 20px 0px;
+            border-image-slice: 20 70 fill;
+            box-shadow: 0 3px 3px rgba(82, 186, 255, 0.718);
+        }
+        .navbar{
+            height: 50%;
+            padding-top: 1.1%;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            gap:15%;
+        }
+        .navbar a{
+            color:white;
+            text-shadow: 0 0 2px white;
+            text-decoration:none;
+            font-size:20px;
+            font-weight:bold;
+            padding:8px 15px;
+            border-radius:6px;
+            transition:0.3s;
+        }
+        .navbar a:hover{
+            background:#00bcd4;
+            color:black;
+        }
+        .navbar a.active{
+            background:#00bcd4;
+            color:black;
+        }
+
+        /* Footer */
+        .footer{
+            width: 100%;
+            height: 350px;
+            background-color: rgba(0, 19, 45, 0.985);
+            border-image-source: url("../Imgs/Header_&_Footer/Border-Footer.png");
+            border-image-width: 20px 100px;
+            border-image-slice: 40 115 fill;
+            box-shadow: 3px 0 3px rgba(82, 186, 255, 0.718);
+            margin-top: 50px;
+        }
+
+        /* Footer Top - horizontal columns */
+        .footer-top {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin-left:10%;
+            padding-top: 3%;
+            flex-wrap: nowrap; /* keep in one line */
+            gap: 60px;
+        }
+        
+        /* Each column */
+        .footer-col {
+            max-width: 220px;
+        }
+        
+        /* Logo / Column titles */
+        .logo, .footer-col h3 {
+            color: white;
+            margin-bottom: 15px;
+            text-shadow: 0 0 4px white;
+        }
+        
+        /* Links */
+        .footer-col a {
+            display: block;
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 8px 0;
+            transition: 0.3s;
+            text-shadow: 0 0 1px white;
+        }
+        .footer-col a:hover{text-decoration: underline;}
+        
+        .footer p {
+            line-height: 1.6;
+            color: white;
+            text-shadow: 0 0 1px white;
+        }
+        
+        /* Divider */
+        hr {
+            width: 85%;
+            margin: 40px 7.5%;
+            border: 0.5px solid #4878b5;
+        }
+        
+        /* Footer Bottom */
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 0 0 10%;
+        }
+        
+        /* Social icons */
+        .socials a {
+            margin-right: 15px;
+            font-size: 24px;
+            text-decoration: none;
+            color: #cbd5e1;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }   
+        .socials a:hover svg{
+        filter: drop-shadow(0 0 8px #0ae2ff);
+        transform: scale(1.3);
+        }
+        
+        /* Copyright */
+        .copyright {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .copyright p{
+            font-size: 18px;
+            color: white;
+            text-shadow: 0 0 4px white;
+        }
+        .copyright a {
+            margin-left: 15px;
+            font-size: 18;
+            text-shadow: 0 0 1px white;
+            color: #d9e2ed;
+        }
+        
+        .copyright a:hover,.footer-col a:hover {
+            color: #fbfabc;
+            text-shadow: 0 0 2px #f5dddd;
+        }
