@@ -1,5 +1,5 @@
         body{
-            background-image: url("/Imgs/Back-Ground/BG.png");
+            background-image: url("../Imgs/Back-Ground/BG.png");
         }
         *{
             margin: 0%;
