@@ -16,7 +16,9 @@
 #home-head img{
     width: 100%;
     height: 350px;
-    filter: brightness(80%);
+    object-fit: cover;
+    object-position: center 30%;
+    filter: brightness(75%);
 }
 
 /* Overview Part */
